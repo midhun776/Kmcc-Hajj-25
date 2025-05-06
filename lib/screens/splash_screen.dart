@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kmcc_hajj_25/constants/app_constants.dart';
-import 'package:kmcc_hajj_25/screens/location_selection.dart';
+import 'package:kmcc_hajj_25/widgets/bottom_navigation.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -37,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen>
   _navigateToNextScreen() async {
     await Future.delayed(const Duration(seconds: 3), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => LocationSelection()));
+        context, MaterialPageRoute(builder: (context) => BottomNavBarScreen()));
   }
 
   @override
